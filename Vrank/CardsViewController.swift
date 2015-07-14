@@ -12,17 +12,19 @@ class CardsViewController: UIViewController {
     
     
     @IBOutlet weak var friendsLabel: UILabel!
-    @IBOutlet weak var friendsCard: UIImageView!
-    
+    @IBOutlet weak var friendsCard: UIButton!
     
     let friendsBook = FriendsBook()
+    let swipeRec = UISwipeGestureRecognizer()
     
         override func viewDidLoad() {
-            let chosenNr = friendsBook.randomNr()
             super.viewDidLoad()
-            // Do any additional setup after loading the view, typically from a nib.
-            friendsLabel.text = friendsBook.friendsArray[chosenNr]
-        }
+            friendsLabel.text = friendsBook.randomFriends()
+            
+            let swipeButtonLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "buttonLeft")
+                swipeButtonLeft.direction = UISwipeGestureRecognizerDirection.Left
+                self.friendsCard.addGestureRecognizer(swipeButtonLeft)
+            }
         
         override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
@@ -31,8 +33,7 @@ class CardsViewController: UIViewController {
     
 
     @IBAction func showNewFriends(sender: UIButton) {
-        let chosenNr = friendsBook.randomNr()
-        friendsLabel.text = friendsBook.friendsArray[chosenNr]
+        friendsLabel.text = friendsBook.randomFriends()
         friendsLabel.hidden = false
         friendsLabel.alpha = 0
         friendsCard.hidden = false
@@ -45,6 +46,23 @@ class CardsViewController: UIViewController {
         UIView.animateWithDuration(1.2, animations: {
             self.friendsLabel.alpha = 0.8
         })
+    }
+    
+    @IBAction func buttonLeft(){
+        friendsLabel.text = friendsBook.randomFriends()
+        friendsLabel.hidden = false
+        friendsLabel.alpha = 0
+        friendsCard.hidden = false
+        friendsCard.alpha = 0
+        
+        UIView.animateWithDuration(1, animations: {
+            self.friendsCard.alpha = 1
+        })
+        
+        UIView.animateWithDuration(1.2, animations: {
+            self.friendsLabel.alpha = 0.8
+        })
+
     }
     
     @IBAction func share(sender: UIButton) {

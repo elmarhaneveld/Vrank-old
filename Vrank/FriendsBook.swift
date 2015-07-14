@@ -9,7 +9,7 @@
 import Foundation
 
 struct FriendsBook {
-    var friendsArray = [
+    let friendsArray = [
         "Wat is het schaamtevolste wat je ooit hebt gedaan?",
         "Wat heb je wel eens voor ons achtergehouden?",
         "Welke baan zou je best een dagje willen uitproberen?",
@@ -22,12 +22,12 @@ struct FriendsBook {
         "Welke artiest(en) volgde je op de voet tijdens je jeugd?"
     ]
     
-    var numbersArray: [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    
-    func randomNr() -> Int {
-        var randomIndex = arc4random_uniform(UInt32(numbersArray.count))
-        let randomNumber = numbersArray[randomIndex.hashValue]
+    func randomFriends() -> String {
+        let unsignedArrayCount = UInt32(friendsArray.count)
+        let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
+        let randomNumber = Int(unsignedRandomNumber)
         
-        return numbersArray[randomNumber]
+        return friendsArray[randomNumber]
     }
+
 }

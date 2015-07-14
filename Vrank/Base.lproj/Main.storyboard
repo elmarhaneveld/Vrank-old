@@ -175,10 +175,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="teD-Wl-EdX" customClass="SpringImageView" customModule="Vrank" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-36-mBl">
                                 <rect key="frame" x="155" y="90" width="290" height="400"/>
                                 <animations/>
-                            </imageView>
+                                <state key="normal" image="card"/>
+                                <connections>
+                                    <action selector="buttonLeft" destination="Okc-0u-6Bm" eventType="touchUpInside" id="OCv-Zi-bjB"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Een stuk ruimte voor de vraag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-fc-fnk">
                                 <rect key="frame" x="170" y="140" width="260" height="300"/>
                                 <animations/>
@@ -231,10 +235,11 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="teD-Wl-EdX" firstAttribute="centerX" secondItem="NXA-fc-fnk" secondAttribute="centerX" id="4rJ-jS-PXM"/>
                             <constraint firstItem="NXA-fc-fnk" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="70f-ZN-1CG"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="8Xa-FB-nvD"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="BoB-zZ-WrL" secondAttribute="bottom" constant="-62" id="EyJ-I4-EBB"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="trailing" secondItem="Np4-zv-upu" secondAttribute="trailingMargin" id="JnV-55-1MH"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerY" secondItem="3dH-VM-u8b" secondAttribute="centerY" constant="-10" id="OGC-wZ-HH9"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="top" secondItem="uWb-OM-DEc" secondAttribute="bottom" constant="18" id="OKf-qb-VhO"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="bottom" secondItem="AdZ-Xs-3K3" secondAttribute="top" id="PKc-Dk-X52"/>
                             <constraint firstItem="zn7-BK-FCn" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="Ybi-6q-f5x"/>
@@ -242,7 +247,6 @@
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" constant="10" id="bC6-cu-hPb"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="SOt-WD-SUH" secondAttribute="bottom" constant="-63" id="cPQ-KW-YIt"/>
                             <constraint firstAttribute="trailing" secondItem="3dH-VM-u8b" secondAttribute="trailing" id="evq-Bg-eFq"/>
-                            <constraint firstItem="teD-Wl-EdX" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" id="gC8-Vj-xRt"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="Np4-zv-upu" secondAttribute="top" id="kax-YE-bTt"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="leading" secondItem="3dH-VM-u8b" secondAttribute="trailing" constant="-44" id="lUv-Pm-tx1"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="leading" secondItem="Np4-zv-upu" secondAttribute="leading" id="uNY-5x-Pjt"/>
@@ -250,7 +254,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="friendsCard" destination="teD-Wl-EdX" id="TEg-6K-6XK"/>
+                        <outlet property="friendsCard" destination="IDO-36-mBl" id="sk3-nv-JrC"/>
                         <outlet property="friendsLabel" destination="NXA-fc-fnk" id="ou1-eR-3I2"/>
                     </connections>
                 </viewController>
