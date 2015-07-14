@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440D53431B529E0B007EC33D /* gunnar-bold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440D53421B529DFB007EC33D /* gunnar-bold-webfont.ttf */; };
+		442F45341B529310004E8FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45331B529310004E8FEF /* AppDelegate.swift */; };
+		442F45361B529311004E8FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45351B529310004E8FEF /* ViewController.swift */; };
+		442F45391B529311004E8FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F45371B529311004E8FEF /* Main.storyboard */; };
+		442F453B1B529311004E8FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442F453A1B529311004E8FEF /* Assets.xcassets */; };
+		442F453E1B529311004E8FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F453C1B529311004E8FEF /* LaunchScreen.storyboard */; };
+		442F45491B529311004E8FEF /* VrankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45481B529311004E8FEF /* VrankTests.swift */; };
+		442F45541B529311004E8FEF /* VrankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45531B529311004E8FEF /* VrankUITests.swift */; };
+		44A4FCB11B5528BD000994C8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4FCB01B5528BD000994C8 /* CardsViewController.swift */; };
+		44A571711B5512A90023E2DA /* FriendsBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A571701B5512A90023E2DA /* FriendsBook.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		442F45451B529311004E8FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442F45281B529310004E8FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442F452F1B529310004E8FEF;
+			remoteInfo = Vrank;
+		};
+		442F45501B529311004E8FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442F45281B529310004E8FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442F452F1B529310004E8FEF;
+			remoteInfo = Vrank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		440D53421B529DFB007EC33D /* gunnar-bold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gunnar-bold-webfont.ttf"; path = "../../../../../Downloads/Final font for delivery/webfontkit/gunnar-bold-webfont.ttf"; sourceTree = "<group>"; };
+		442F45301B529310004E8FEF /* Vrank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vrank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442F45331B529310004E8FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		442F45351B529310004E8FEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		442F45381B529311004E8FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442F453A1B529311004E8FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442F453D1B529311004E8FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442F453F1B529311004E8FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442F45441B529311004E8FEF /* VrankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		442F45481B529311004E8FEF /* VrankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrankTests.swift; sourceTree = "<group>"; };
+		442F454A1B529311004E8FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442F454F1B529311004E8FEF /* VrankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		442F45531B529311004E8FEF /* VrankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrankUITests.swift; sourceTree = "<group>"; };
+		442F45551B529311004E8FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A4FCB01B5528BD000994C8 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		44A571701B5512A90023E2DA /* FriendsBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsBook.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442F452D1B529310004E8FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F45411B529311004E8FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F454C1B529311004E8FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		440D53411B529D96007EC33D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				440D53421B529DFB007EC33D /* gunnar-bold-webfont.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		442F45271B529310004E8FEF = {
+			isa = PBXGroup;
+			children = (
+				442F45321B529310004E8FEF /* Vrank */,
+				442F45471B529311004E8FEF /* VrankTests */,
+				442F45521B529311004E8FEF /* VrankUITests */,
+				442F45311B529310004E8FEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		442F45311B529310004E8FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442F45301B529310004E8FEF /* Vrank.app */,
+				442F45441B529311004E8FEF /* VrankTests.xctest */,
+				442F454F1B529311004E8FEF /* VrankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442F45321B529310004E8FEF /* Vrank */ = {
+			isa = PBXGroup;
+			children = (
+				440D53411B529D96007EC33D /* Fonts */,
+				442F45331B529310004E8FEF /* AppDelegate.swift */,
+				442F45351B529310004E8FEF /* ViewController.swift */,
+				44A4FCB01B5528BD000994C8 /* CardsViewController.swift */,
+				44A571701B5512A90023E2DA /* FriendsBook.swift */,
+				442F45371B529311004E8FEF /* Main.storyboard */,
+				442F453A1B529311004E8FEF /* Assets.xcassets */,
+				442F453C1B529311004E8FEF /* LaunchScreen.storyboard */,
+				442F453F1B529311004E8FEF /* Info.plist */,
+			);
+			path = Vrank;
+			sourceTree = "<group>";
+		};
+		442F45471B529311004E8FEF /* VrankTests */ = {
+			isa = PBXGroup;
+			children = (
+				442F45481B529311004E8FEF /* VrankTests.swift */,
+				442F454A1B529311004E8FEF /* Info.plist */,
+			);
+			path = VrankTests;
+			sourceTree = "<group>";
+		};
+		442F45521B529311004E8FEF /* VrankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				442F45531B529311004E8FEF /* VrankUITests.swift */,
+				442F45551B529311004E8FEF /* Info.plist */,
+			);
+			path = VrankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442F452F1B529310004E8FEF /* Vrank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442F45581B529311004E8FEF /* Build configuration list for PBXNativeTarget "Vrank" */;
+			buildPhases = (
+				442F452C1B529310004E8FEF /* Sources */,
+				442F452D1B529310004E8FEF /* Frameworks */,
+				442F452E1B529310004E8FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vrank;
+			productName = Vrank;
+			productReference = 442F45301B529310004E8FEF /* Vrank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		442F45431B529311004E8FEF /* VrankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442F455B1B529311004E8FEF /* Build configuration list for PBXNativeTarget "VrankTests" */;
+			buildPhases = (
+				442F45401B529311004E8FEF /* Sources */,
+				442F45411B529311004E8FEF /* Frameworks */,
+				442F45421B529311004E8FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442F45461B529311004E8FEF /* PBXTargetDependency */,
+			);
+			name = VrankTests;
+			productName = VrankTests;
+			productReference = 442F45441B529311004E8FEF /* VrankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		442F454E1B529311004E8FEF /* VrankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442F455E1B529311004E8FEF /* Build configuration list for PBXNativeTarget "VrankUITests" */;
+			buildPhases = (
+				442F454B1B529311004E8FEF /* Sources */,
+				442F454C1B529311004E8FEF /* Frameworks */,
+				442F454D1B529311004E8FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442F45511B529311004E8FEF /* PBXTargetDependency */,
+			);
+			name = VrankUITests;
+			productName = VrankUITests;
+			productReference = 442F454F1B529311004E8FEF /* VrankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442F45281B529310004E8FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Elmar Haneveld";
+				TargetAttributes = {
+					442F452F1B529310004E8FEF = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 242QBD55T5;
+					};
+					442F45431B529311004E8FEF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 442F452F1B529310004E8FEF;
+					};
+					442F454E1B529311004E8FEF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 442F452F1B529310004E8FEF;
+					};
+				};
+			};
+			buildConfigurationList = 442F452B1B529310004E8FEF /* Build configuration list for PBXProject "Vrank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442F45271B529310004E8FEF;
+			productRefGroup = 442F45311B529310004E8FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442F452F1B529310004E8FEF /* Vrank */,
+				442F45431B529311004E8FEF /* VrankTests */,
+				442F454E1B529311004E8FEF /* VrankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442F452E1B529310004E8FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440D53431B529E0B007EC33D /* gunnar-bold-webfont.ttf in Resources */,
+				442F453E1B529311004E8FEF /* LaunchScreen.storyboard in Resources */,
+				442F453B1B529311004E8FEF /* Assets.xcassets in Resources */,
+				442F45391B529311004E8FEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F45421B529311004E8FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F454D1B529311004E8FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442F452C1B529310004E8FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A4FCB11B5528BD000994C8 /* CardsViewController.swift in Sources */,
+				442F45361B529311004E8FEF /* ViewController.swift in Sources */,
+				44A571711B5512A90023E2DA /* FriendsBook.swift in Sources */,
+				442F45341B529310004E8FEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F45401B529311004E8FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442F45491B529311004E8FEF /* VrankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F454B1B529311004E8FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442F45541B529311004E8FEF /* VrankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		442F45461B529311004E8FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442F452F1B529310004E8FEF /* Vrank */;
+			targetProxy = 442F45451B529311004E8FEF /* PBXContainerItemProxy */;
+		};
+		442F45511B529311004E8FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442F452F1B529310004E8FEF /* Vrank */;
+			targetProxy = 442F45501B529311004E8FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		442F45371B529311004E8FEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F45381B529311004E8FEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442F453C1B529311004E8FEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F453D1B529311004E8FEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442F45561B529311004E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442F45571B529311004E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442F45591B529311004E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Vrank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.Vrank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		442F455A1B529311004E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Vrank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.Vrank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		442F455C1B529311004E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VrankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.VrankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vrank.app/Vrank";
+			};
+			name = Debug;
+		};
+		442F455D1B529311004E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VrankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.VrankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vrank.app/Vrank";
+			};
+			name = Release;
+		};
+		442F455F1B529311004E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VrankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.VrankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vrank;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		442F45601B529311004E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VrankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elmarhaneveld.VrankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vrank;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442F452B1B529310004E8FEF /* Build configuration list for PBXProject "Vrank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F45561B529311004E8FEF /* Debug */,
+				442F45571B529311004E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442F45581B529311004E8FEF /* Build configuration list for PBXNativeTarget "Vrank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F45591B529311004E8FEF /* Debug */,
+				442F455A1B529311004E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442F455B1B529311004E8FEF /* Build configuration list for PBXNativeTarget "VrankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F455C1B529311004E8FEF /* Debug */,
+				442F455D1B529311004E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442F455E1B529311004E8FEF /* Build configuration list for PBXNativeTarget "VrankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F455F1B529311004E8FEF /* Debug */,
+				442F45601B529311004E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 442F45281B529310004E8FEF /* Project object */;
+}
