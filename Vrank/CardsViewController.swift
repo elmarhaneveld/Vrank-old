@@ -38,13 +38,28 @@ class CardsViewController: UIViewController {
         friendsCard.hidden = false
         friendsCard.alpha = 0
         
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(1, animations: {
             self.friendsCard.alpha = 1
         })
         
-        UIView.animateWithDuration(0.5, animations: {
-            self.friendsLabel.alpha = 1
+        UIView.animateWithDuration(1.2, animations: {
+            self.friendsLabel.alpha = 0.8
         })
     }
+    
+    @IBAction func share(sender: UIButton) {
+        
+        let textToShare = ("\(friendsLabel.text!): ")
+        
+        if let myWebsite = NSURL(string: "http://www.vrankapp.nl/")
+        {
+            let objectsToShare = [textToShare, myWebsite]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+            
+        }
+    }
+
 
 }

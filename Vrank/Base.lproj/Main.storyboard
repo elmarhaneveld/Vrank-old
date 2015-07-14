@@ -36,23 +36,52 @@
                                     <constraint firstAttribute="height" constant="600" id="2ME-D1-fLL"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VRANK" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-tz-xZe">
-                                <rect key="frame" x="232" y="51" width="135" height="44"/>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-T0-4Iv">
+                                <rect key="frame" x="155" y="486" width="290" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="PFq-je-mec"/>
+                                    <constraint firstAttribute="height" constant="80" id="Spm-Rq-hLU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
+                                <state key="normal" title="onder collega's">
+                                    <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="altijd gespreksstof" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-F5-W5w">
+                                <rect key="frame" x="190" y="101" width="219" height="44"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="1on-bz-afz"/>
-                                    <constraint firstAttribute="width" constant="135" id="Wtw-NH-JrW"/>
+                                    <constraint firstAttribute="height" constant="44" id="mQl-3S-gzb"/>
+                                    <constraint firstAttribute="width" constant="219" id="rwo-7e-41K"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="20"/>
+                                <color key="textColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VRANK" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-tz-xZe">
+                                <rect key="frame" x="193" y="51" width="213" height="58"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="1on-bz-afz"/>
+                                    <constraint firstAttribute="width" constant="213" id="Wtw-NH-JrW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="60"/>
                                 <color key="textColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXz-2S-3Vp">
-                                <rect key="frame" x="155" y="282" width="290" height="60"/>
+                                <rect key="frame" x="155" y="220" width="290" height="80"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="5sj-EJ-WrT"/>
+                                    <constraint firstAttribute="height" constant="80" id="5sj-EJ-WrT"/>
                                     <constraint firstAttribute="width" constant="290" id="AUh-6N-xyi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
@@ -69,12 +98,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-Dv-lne">
-                                <rect key="frame" x="155" y="350" width="290" height="60"/>
+                                <rect key="frame" x="155" y="310" width="290" height="80"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="s6M-4L-Nkp"/>
-                                    <constraint firstAttribute="height" constant="60" id="ubJ-Nb-vdZ"/>
+                                    <constraint firstAttribute="height" constant="80" id="ubJ-Nb-vdZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
                                 <state key="normal" title="bij m'n partner">
@@ -87,12 +116,12 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhg-EJ-Ajj">
-                                <rect key="frame" x="155" y="418" width="290" height="60"/>
+                                <rect key="frame" x="155" y="398" width="290" height="80"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="8aD-ek-9dL"/>
-                                    <constraint firstAttribute="height" constant="60" id="CRg-QW-zu5"/>
+                                    <constraint firstAttribute="height" constant="80" id="CRg-QW-zu5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
                                 <state key="normal" title="op m'n eerste date">
@@ -104,35 +133,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-T0-4Iv">
-                                <rect key="frame" x="155" y="486" width="290" height="60"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.20458582043647766" green="0.1889021098613739" blue="0.20788305997848511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="PFq-je-mec"/>
-                                    <constraint firstAttribute="height" constant="60" id="Spm-Rq-hLU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <state key="normal" title="onder collega's">
-                                    <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="altijd gespreksstof" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-F5-W5w">
-                                <rect key="frame" x="190" y="86" width="219" height="44"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="mQl-3S-gzb"/>
-                                    <constraint firstAttribute="width" constant="219" id="rwo-7e-41K"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="20"/>
-                                <color key="textColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <constraints>
@@ -149,8 +149,8 @@
                             <constraint firstItem="2JL-tz-xZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jDy-nT-HSr"/>
                             <constraint firstItem="ffQ-Dv-lne" firstAttribute="centerX" secondItem="2JL-tz-xZe" secondAttribute="centerX" id="mAu-XJ-2zQ"/>
                             <constraint firstItem="xhg-EJ-Ajj" firstAttribute="centerX" secondItem="hXz-2S-3Vp" secondAttribute="centerX" id="oKo-WW-Pln"/>
-                            <constraint firstItem="ffQ-Dv-lne" firstAttribute="top" secondItem="hXz-2S-3Vp" secondAttribute="bottom" constant="8" symbolic="YES" id="qZv-0b-u6a"/>
-                            <constraint firstItem="5fx-F5-W5w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="uZ9-8a-lDd"/>
+                            <constraint firstItem="ffQ-Dv-lne" firstAttribute="top" secondItem="hXz-2S-3Vp" secondAttribute="bottom" constant="10" id="qZv-0b-u6a"/>
+                            <constraint firstItem="5fx-F5-W5w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="uZ9-8a-lDd"/>
                             <constraint firstItem="P0e-1f-s3P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wOT-Jc-klD"/>
                         </constraints>
                     </view>
@@ -176,15 +176,42 @@
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="teD-Wl-EdX" customClass="SpringImageView" customModule="Vrank" customModuleProvider="target">
-                                <rect key="frame" x="155" y="100" width="290" height="400"/>
+                                <rect key="frame" x="155" y="90" width="290" height="400"/>
                                 <animations/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Een stuk ruimte voor de vraag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-fc-fnk">
+                                <rect key="frame" x="170" y="140" width="260" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="DBV-0n-40m"/>
+                                    <constraint firstAttribute="height" constant="300" id="iUZ-ya-611"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="28"/>
+                                <color key="textColor" red="0.20118096470832825" green="0.17729532718658447" blue="0.19999223947525024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoB-zZ-WrL">
+                                <rect key="frame" x="556" y="38" width="24" height="24"/>
+                                <animations/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ggY-Qu-Sd7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOt-WD-SUH">
+                                <rect key="frame" x="20" y="35" width="28" height="28"/>
+                                <animations/>
+                                <state key="normal" image="upload"/>
+                                <connections>
+                                    <action selector="share:" destination="Okc-0u-6Bm" eventType="touchUpInside" id="XWw-kr-IU7"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zn7-BK-FCn">
-                                <rect key="frame" x="155" y="520" width="290" height="60"/>
+                                <rect key="frame" x="200" y="510" width="200" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20458582040000001" green="0.1889021099" blue="0.20788306000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="8Gb-Xt-NXi"/>
+                                    <constraint firstAttribute="width" constant="200" id="8Gb-Xt-NXi"/>
                                     <constraint firstAttribute="height" constant="60" id="x0r-BS-FOm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
@@ -200,25 +227,6 @@
                                     <action selector="showNewFriends:" destination="Okc-0u-6Bm" eventType="touchUpInside" id="oi9-hl-P1Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text text en dat soort dingen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-fc-fnk">
-                                <rect key="frame" x="170" y="150" width="260" height="300"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="DBV-0n-40m"/>
-                                    <constraint firstAttribute="height" constant="300" id="iUZ-ya-611"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <color key="textColor" red="0.20118096470832825" green="0.17729532718658447" blue="0.19999223947525024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoB-zZ-WrL">
-                                <rect key="frame" x="556" y="38" width="24" height="24"/>
-                                <animations/>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ggY-Qu-Sd7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,13 +238,15 @@
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="top" secondItem="uWb-OM-DEc" secondAttribute="bottom" constant="18" id="OKf-qb-VhO"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="bottom" secondItem="AdZ-Xs-3K3" secondAttribute="top" id="PKc-Dk-X52"/>
                             <constraint firstItem="zn7-BK-FCn" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="Ybi-6q-f5x"/>
-                            <constraint firstItem="3dH-VM-u8b" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" id="bC6-cu-hPb"/>
+                            <constraint firstItem="3dH-VM-u8b" firstAttribute="leading" secondItem="SOt-WD-SUH" secondAttribute="trailing" constant="-48" id="Zp6-lF-umc"/>
+                            <constraint firstItem="3dH-VM-u8b" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" constant="10" id="bC6-cu-hPb"/>
+                            <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="SOt-WD-SUH" secondAttribute="bottom" constant="-63" id="cPQ-KW-YIt"/>
                             <constraint firstAttribute="trailing" secondItem="3dH-VM-u8b" secondAttribute="trailing" id="evq-Bg-eFq"/>
                             <constraint firstItem="teD-Wl-EdX" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" id="gC8-Vj-xRt"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="Np4-zv-upu" secondAttribute="top" id="kax-YE-bTt"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="leading" secondItem="3dH-VM-u8b" secondAttribute="trailing" constant="-44" id="lUv-Pm-tx1"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="leading" secondItem="Np4-zv-upu" secondAttribute="leading" id="uNY-5x-Pjt"/>
-                            <constraint firstAttribute="bottom" secondItem="zn7-BK-FCn" secondAttribute="bottom" constant="20" id="uUi-dw-kDP"/>
+                            <constraint firstAttribute="bottom" secondItem="zn7-BK-FCn" secondAttribute="bottom" constant="30" id="uUi-dw-kDP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -254,5 +264,6 @@
         <image name="bg-vrienden" width="320" height="568"/>
         <image name="card" width="290" height="400"/>
         <image name="close" width="24" height="24"/>
+        <image name="upload" width="28" height="28"/>
     </resources>
 </document>
