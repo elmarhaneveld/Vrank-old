@@ -35,32 +35,37 @@ class CardsViewController: UIViewController {
     @IBAction func showNewFriends(sender: UIButton) {
         friendsLabel.text = friendsBook.randomFriends()
         friendsLabel.hidden = false
-        friendsLabel.alpha = 0
+        friendsLabel.alpha = 1
         friendsCard.hidden = false
-        friendsCard.alpha = 0
+        friendsCard.alpha = 1
         
-        UIView.animateWithDuration(1, animations: {
+        UIView.animateWithDuration(0.6, animations: {
             self.friendsCard.alpha = 1
+            self.friendsCard.frame = CGRectMake(self.friendsCard.frame.origin.x + 0, self.friendsCard.frame.origin.y + 20, self.friendsCard.frame.size.width, self.friendsCard.frame.size.height)
         })
         
-        UIView.animateWithDuration(1.2, animations: {
-            self.friendsLabel.alpha = 0.8
+        UIView.animateWithDuration(0.6, animations: {
+            self.friendsLabel.alpha = 1
+            self.friendsLabel.frame = CGRectMake(self.friendsLabel.frame.origin.x + 0, self.friendsLabel.frame.origin.y + 20, self.friendsLabel.frame.size.width, self.friendsLabel.frame.size.height)
         })
     }
     
     @IBAction func buttonLeft(){
         friendsLabel.text = friendsBook.randomFriends()
         friendsLabel.hidden = false
-        friendsLabel.alpha = 0
+        friendsLabel.alpha = 1
         friendsCard.hidden = false
-        friendsCard.alpha = 0
+        friendsCard.alpha = 1
         
-        UIView.animateWithDuration(1, animations: {
+        
+        UIView.animateWithDuration(0.6, animations: {
             self.friendsCard.alpha = 1
+            self.friendsCard.frame = CGRectMake(self.friendsCard.frame.origin.x + 0, self.friendsCard.frame.origin.y + 20, self.friendsCard.frame.size.width, self.friendsCard.frame.size.height)
         })
         
-        UIView.animateWithDuration(1.2, animations: {
-            self.friendsLabel.alpha = 0.8
+        UIView.animateWithDuration(0.6, animations: {
+            self.friendsLabel.alpha = 1
+            self.friendsLabel.frame = CGRectMake(self.friendsLabel.frame.origin.x + 0, self.friendsLabel.frame.origin.y + 20, self.friendsLabel.frame.size.width, self.friendsLabel.frame.size.height)
         })
 
     }

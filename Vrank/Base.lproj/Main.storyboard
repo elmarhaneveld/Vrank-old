@@ -175,16 +175,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-36-mBl">
-                                <rect key="frame" x="155" y="90" width="290" height="400"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="SXQ-Bx-enu">
+                                <rect key="frame" x="165" y="75" width="270" height="390"/>
                                 <animations/>
-                                <state key="normal" image="card"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="cQO-38-PkU"/>
+                                    <constraint firstAttribute="width" constant="270" id="eBi-BF-K0s"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-36-mBl">
+                                <rect key="frame" x="155" y="95" width="290" height="380"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="408-DP-0go"/>
+                                    <constraint firstAttribute="width" constant="290" id="qkO-wW-opk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonLeft" destination="Okc-0u-6Bm" eventType="touchUpInside" id="OCv-Zi-bjB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Een stuk ruimte voor de vraag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-fc-fnk">
-                                <rect key="frame" x="170" y="140" width="260" height="300"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Een stuk ruimte voor de vraag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-fc-fnk">
+                                <rect key="frame" x="170" y="135" width="260" height="300"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="DBV-0n-40m"/>
@@ -193,6 +210,11 @@
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="28"/>
                                 <color key="textColor" red="0.20118096470832825" green="0.17729532718658447" blue="0.19999223947525024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iUZ-ya-611"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoB-zZ-WrL">
                                 <rect key="frame" x="556" y="38" width="24" height="24"/>
@@ -235,23 +257,68 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zn7-BK-FCn" firstAttribute="top" secondItem="NXA-fc-fnk" secondAttribute="bottom" constant="70" id="1uc-cb-MkA"/>
+                            <constraint firstItem="zn7-BK-FCn" firstAttribute="top" secondItem="SXQ-Bx-enu" secondAttribute="bottom" constant="50" id="5kY-VV-Dr8"/>
+                            <constraint firstItem="NXA-fc-fnk" firstAttribute="top" secondItem="uWb-OM-DEc" secondAttribute="bottom" constant="115" id="6KV-Qc-UEL"/>
                             <constraint firstItem="NXA-fc-fnk" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="70f-ZN-1CG"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="trailing" secondItem="IDO-36-mBl" secondAttribute="trailing" constant="-10" id="7Q5-4S-ybb"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="7UH-M8-4fB"/>
                             <constraint firstItem="IDO-36-mBl" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="8Xa-FB-nvD"/>
+                            <constraint firstItem="NXA-fc-fnk" firstAttribute="centerY" secondItem="IDO-36-mBl" secondAttribute="centerY" id="D70-JM-pZt"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="BoB-zZ-WrL" secondAttribute="bottom" constant="-62" id="EyJ-I4-EBB"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="HkH-de-SmP"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="trailing" secondItem="Np4-zv-upu" secondAttribute="trailingMargin" id="JnV-55-1MH"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerY" secondItem="3dH-VM-u8b" secondAttribute="centerY" id="LgJ-qJ-xuc"/>
                             <constraint firstItem="IDO-36-mBl" firstAttribute="centerY" secondItem="3dH-VM-u8b" secondAttribute="centerY" constant="-10" id="OGC-wZ-HH9"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="top" secondItem="uWb-OM-DEc" secondAttribute="bottom" constant="18" id="OKf-qb-VhO"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="bottom" secondItem="AdZ-Xs-3K3" secondAttribute="top" id="PKc-Dk-X52"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" id="VVz-GB-w2N"/>
+                            <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="IDO-36-mBl" secondAttribute="bottom" constant="-470" id="X7g-VT-dDl"/>
                             <constraint firstItem="zn7-BK-FCn" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="Ybi-6q-f5x"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="top" secondItem="SXQ-Bx-enu" secondAttribute="bottom" constant="-370" id="YjE-KZ-t6A"/>
+                            <constraint firstItem="zn7-BK-FCn" firstAttribute="top" secondItem="NXA-fc-fnk" secondAttribute="bottom" constant="75" id="ZDx-a8-kI0"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="leading" secondItem="SOt-WD-SUH" secondAttribute="trailing" constant="-48" id="Zp6-lF-umc"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="centerY" secondItem="NXA-fc-fnk" secondAttribute="centerY" constant="10" id="bC6-cu-hPb"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerX" secondItem="3dH-VM-u8b" secondAttribute="centerX" id="bPe-I0-GtX"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="SOt-WD-SUH" secondAttribute="bottom" constant="-63" id="cPQ-KW-YIt"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="leading" secondItem="3dH-VM-u8b" secondAttribute="trailing" constant="-435" id="cvQ-el-rqM"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="centerX" secondItem="IDO-36-mBl" secondAttribute="centerX" id="cy5-Vq-cov"/>
                             <constraint firstAttribute="trailing" secondItem="3dH-VM-u8b" secondAttribute="trailing" id="evq-Bg-eFq"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerX" secondItem="NXA-fc-fnk" secondAttribute="centerX" id="gJf-XU-CnL"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="top" secondItem="Np4-zv-upu" secondAttribute="top" id="kax-YE-bTt"/>
                             <constraint firstItem="BoB-zZ-WrL" firstAttribute="leading" secondItem="3dH-VM-u8b" secondAttribute="trailing" constant="-44" id="lUv-Pm-tx1"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="centerY" secondItem="3dH-VM-u8b" secondAttribute="centerY" constant="-35" id="shp-nv-Ise"/>
                             <constraint firstItem="3dH-VM-u8b" firstAttribute="leading" secondItem="Np4-zv-upu" secondAttribute="leading" id="uNY-5x-Pjt"/>
                             <constraint firstAttribute="bottom" secondItem="zn7-BK-FCn" secondAttribute="bottom" constant="30" id="uUi-dw-kDP"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="centerY" secondItem="3dH-VM-u8b" secondAttribute="centerY" id="uYf-OR-3Ro"/>
+                            <constraint firstItem="SXQ-Bx-enu" firstAttribute="top" secondItem="uWb-OM-DEc" secondAttribute="bottom" constant="50" id="xIY-LK-Aos"/>
+                            <constraint firstItem="NXA-fc-fnk" firstAttribute="centerY" secondItem="IDO-36-mBl" secondAttribute="centerY" id="ydE-K0-h7t"/>
+                            <constraint firstItem="zn7-BK-FCn" firstAttribute="top" secondItem="IDO-36-mBl" secondAttribute="bottom" constant="40" id="zoP-KJ-XRG"/>
+                            <constraint firstItem="IDO-36-mBl" firstAttribute="top" secondItem="SXQ-Bx-enu" secondAttribute="bottom" constant="-370" id="zvb-jZ-EP8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="X7g-VT-dDl"/>
+                                <exclude reference="bC6-cu-hPb"/>
+                                <exclude reference="7Q5-4S-ybb"/>
+                                <exclude reference="cvQ-el-rqM"/>
+                                <exclude reference="cy5-Vq-cov"/>
+                                <exclude reference="shp-nv-Ise"/>
+                                <exclude reference="xIY-LK-Aos"/>
+                                <exclude reference="8Xa-FB-nvD"/>
+                                <exclude reference="HkH-de-SmP"/>
+                                <exclude reference="LgJ-qJ-xuc"/>
+                                <exclude reference="OGC-wZ-HH9"/>
+                                <exclude reference="VVz-GB-w2N"/>
+                                <exclude reference="YjE-KZ-t6A"/>
+                                <exclude reference="bPe-I0-GtX"/>
+                                <exclude reference="uYf-OR-3Ro"/>
+                                <exclude reference="ydE-K0-h7t"/>
+                                <exclude reference="1uc-cb-MkA"/>
+                                <exclude reference="5kY-VV-Dr8"/>
+                                <exclude reference="zoP-KJ-XRG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="friendsCard" destination="IDO-36-mBl" id="sk3-nv-JrC"/>
@@ -266,7 +333,7 @@
     <resources>
         <image name="bg-start" width="320" height="568"/>
         <image name="bg-vrienden" width="320" height="568"/>
-        <image name="card" width="290" height="400"/>
+        <image name="card" width="270" height="390"/>
         <image name="close" width="24" height="24"/>
         <image name="upload" width="28" height="28"/>
     </resources>
