@@ -1,15 +1,15 @@
 //
-//  FriendsBook.swift
+//  PartnerBook.swift
 //  Vrank
 //
-//  Created by Elmar Haneveld on 14-07-15.
+//  Created by Elmar Haneveld on 16-07-15.
 //  Copyright © 2015 Elmar Haneveld. All rights reserved.
 //
 
 import Foundation
 
-struct FriendsBook {
-    let friendsArray = [
+struct PartnerBook {
+    let partnerArray = [
         "Als jij een off day hebt (dat je niet lekker in je vel zit) wat doe je dan het liefst?",
         "Welke tv serie moeten anderen echt zien? Waarom?",
         "Welk boek moeten anderen echt lezen? Waarom?",
@@ -92,12 +92,12 @@ struct FriendsBook {
         "Waar mag je volgens jou echt geen grappen over maken?"
     ]
     
-    func randomFriends() -> String {
-        let unsignedArrayCount = UInt32(friendsArray.count)
+    func randomPartner() -> String {
+        let unsignedArrayCount = UInt32(partnerArray.count)
         let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
         let randomNumber = Int(unsignedRandomNumber)
         
-        return friendsArray[randomNumber]
+        return partnerArray[randomNumber]
     }
-
+    
 }

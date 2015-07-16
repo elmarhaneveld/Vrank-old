@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="gunnar-bold-webfont.ttf">
+            <string>Gunnar-Bold</string>
+            <string>Gunnar-Bold</string>
             <string>Gunnar-Bold</string>
             <string>Gunnar-Bold</string>
             <string>Gunnar-Bold</string>
@@ -45,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="80" id="Spm-Rq-hLU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <state key="normal" title="onder collega's">
+                                <state key="normal" title="collega's">
                                     <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -85,7 +87,7 @@
                                     <constraint firstAttribute="width" constant="290" id="AUh-6N-xyi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <state key="normal" title="met vrienden">
+                                <state key="normal" title="vrienden">
                                     <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -106,7 +108,7 @@
                                     <constraint firstAttribute="height" constant="80" id="ubJ-Nb-vdZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <state key="normal" title="bij m'n partner">
+                                <state key="normal" title="partner">
                                     <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -114,6 +116,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vbV-gE-ak6" kind="presentation" id="GzV-0t-7fe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhg-EJ-Ajj">
                                 <rect key="frame" x="155" y="398" width="290" height="80"/>
@@ -124,7 +129,7 @@
                                     <constraint firstAttribute="height" constant="80" id="CRg-QW-zu5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
-                                <state key="normal" title="op m'n eerste date">
+                                <state key="normal" title="eerste date">
                                     <color key="titleColor" red="0.99989157915115356" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -329,12 +334,186 @@
             </objects>
             <point key="canvasLocation" x="999" y="429"/>
         </scene>
+        <!--Partner-->
+        <scene sceneID="oms-nC-F1H">
+            <objects>
+                <viewController title="Partner" id="vbV-gE-ak6" customClass="CardsTwoViewController" customModule="Vrank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U60-xq-Jqo"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmZ-9o-uem"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jL2-CH-L6h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-partner" translatesAutoresizingMaskIntoConstraints="NO" id="mvZ-p3-h0M">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-9O-aif">
+                                <rect key="frame" x="165" y="75" width="270" height="390"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="1Jv-oK-Ji6"/>
+                                    <constraint firstAttribute="width" constant="270" id="gfD-Ac-Rdg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqe-ri-Imk">
+                                <rect key="frame" x="155" y="95" width="290" height="380"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99989157920000005" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="FIi-qd-uYL"/>
+                                    <constraint firstAttribute="width" constant="290" id="qzJ-w7-9R3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonLeft" destination="vbV-gE-ak6" eventType="touchUpInside" id="2rb-SP-HrY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Een stuk ruimte voor de vraag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx0-Ti-b1D">
+                                <rect key="frame" x="170" y="135" width="260" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="3nu-TP-bTh"/>
+                                    <constraint firstAttribute="height" constant="300" id="r8g-BC-vNE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="28"/>
+                                <color key="textColor" red="0.20118096469999999" green="0.17729532719999999" blue="0.1999922395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r8g-BC-vNE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEp-4a-Vlf">
+                                <rect key="frame" x="556" y="38" width="24" height="24"/>
+                                <animations/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="6cc-AF-gcQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-bo-WNd">
+                                <rect key="frame" x="20" y="35" width="28" height="28"/>
+                                <animations/>
+                                <state key="normal" image="upload"/>
+                                <connections>
+                                    <action selector="share:" destination="vbV-gE-ak6" eventType="touchUpInside" id="eLo-F2-UMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ec-Tu-j6R">
+                                <rect key="frame" x="200" y="510" width="200" height="60"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20458582040000001" green="0.1889021099" blue="0.20788306000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PHN-N2-Sd0"/>
+                                    <constraint firstAttribute="height" constant="60" id="gqD-ly-SXr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gunnar-Bold" family="Gunnar" pointSize="24"/>
+                                <state key="normal" title="volgende">
+                                    <color key="titleColor" red="0.99989157920000005" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showNewPartner:" destination="vbV-gE-ak6" eventType="touchUpInside" id="HBX-0N-rgR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="1Jc-iR-FcN"/>
+                            <constraint firstItem="4Ec-Tu-j6R" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="4sU-1X-Z1L"/>
+                            <constraint firstItem="4Ec-Tu-j6R" firstAttribute="top" secondItem="FDk-9O-aif" secondAttribute="bottom" constant="50" id="4yh-b3-COM"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerY" secondItem="mvZ-p3-h0M" secondAttribute="centerY" constant="-10" id="7CK-ed-GEP"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="85W-eS-ffU"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="top" secondItem="tWS-bo-WNd" secondAttribute="bottom" constant="-63" id="8Ge-Ua-VJw"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="8Rp-yP-G3V"/>
+                            <constraint firstItem="zEp-4a-Vlf" firstAttribute="trailing" secondItem="jL2-CH-L6h" secondAttribute="trailingMargin" id="9LT-QA-2TV"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="centerY" secondItem="mvZ-p3-h0M" secondAttribute="centerY" constant="-35" id="AGj-QZ-hfC"/>
+                            <constraint firstItem="gx0-Ti-b1D" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="ALz-gL-u1s"/>
+                            <constraint firstItem="4Ec-Tu-j6R" firstAttribute="top" secondItem="jqe-ri-Imk" secondAttribute="bottom" constant="40" id="CEV-0M-dfp"/>
+                            <constraint firstItem="zEp-4a-Vlf" firstAttribute="top" secondItem="U60-xq-Jqo" secondAttribute="bottom" constant="18" id="Cnx-X9-7mK"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerY" secondItem="mvZ-p3-h0M" secondAttribute="centerY" id="GcN-lp-e90"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ec-Tu-j6R" secondAttribute="bottom" constant="30" id="HDT-WZ-V5e"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="leading" secondItem="jL2-CH-L6h" secondAttribute="leading" id="MHu-jU-N7t"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="leading" secondItem="tWS-bo-WNd" secondAttribute="trailing" constant="-48" id="MSC-Pu-EXd"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="centerY" secondItem="gx0-Ti-b1D" secondAttribute="centerY" constant="10" id="Mjz-PT-Pk2"/>
+                            <constraint firstItem="gx0-Ti-b1D" firstAttribute="top" secondItem="U60-xq-Jqo" secondAttribute="bottom" constant="115" id="MpT-vV-Sgd"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="centerX" secondItem="jqe-ri-Imk" secondAttribute="centerX" id="NIw-br-9CQ"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerX" secondItem="mvZ-p3-h0M" secondAttribute="centerX" id="Oak-QK-lxS"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="top" secondItem="FDk-9O-aif" secondAttribute="bottom" constant="-370" id="QJd-yY-AmX"/>
+                            <constraint firstAttribute="trailing" secondItem="mvZ-p3-h0M" secondAttribute="trailing" id="SdX-6H-0lf"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerY" secondItem="gx0-Ti-b1D" secondAttribute="centerY" id="SqD-BK-ffa"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="top" secondItem="U60-xq-Jqo" secondAttribute="bottom" constant="50" id="ZUo-Q8-eFx"/>
+                            <constraint firstItem="gx0-Ti-b1D" firstAttribute="centerY" secondItem="jqe-ri-Imk" secondAttribute="centerY" id="ajo-t5-Nl4"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="top" secondItem="FDk-9O-aif" secondAttribute="bottom" constant="-370" id="dfq-If-1Ho"/>
+                            <constraint firstItem="zEp-4a-Vlf" firstAttribute="leading" secondItem="mvZ-p3-h0M" secondAttribute="trailing" constant="-44" id="eSm-Ob-LqO"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="trailing" secondItem="jqe-ri-Imk" secondAttribute="trailing" constant="-10" id="fqC-Rv-cXa"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="top" secondItem="zEp-4a-Vlf" secondAttribute="bottom" constant="-62" id="h80-15-Twu"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerX" secondItem="gx0-Ti-b1D" secondAttribute="centerX" id="hiq-31-19y"/>
+                            <constraint firstItem="4Ec-Tu-j6R" firstAttribute="top" secondItem="gx0-Ti-b1D" secondAttribute="bottom" constant="75" id="hsi-Rd-KZs"/>
+                            <constraint firstItem="FDk-9O-aif" firstAttribute="leading" secondItem="mvZ-p3-h0M" secondAttribute="trailing" constant="-435" id="k1P-Nf-3Jt"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="bottom" secondItem="xmZ-9o-uem" secondAttribute="top" id="m2R-FP-Rb7"/>
+                            <constraint firstItem="gx0-Ti-b1D" firstAttribute="centerY" secondItem="jqe-ri-Imk" secondAttribute="centerY" id="oDg-mS-6wc"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="top" secondItem="jqe-ri-Imk" secondAttribute="bottom" constant="-470" id="pA8-EX-sfC"/>
+                            <constraint firstItem="mvZ-p3-h0M" firstAttribute="top" secondItem="jL2-CH-L6h" secondAttribute="top" id="pZQ-fW-1wH"/>
+                            <constraint firstItem="4Ec-Tu-j6R" firstAttribute="top" secondItem="gx0-Ti-b1D" secondAttribute="bottom" constant="70" id="s74-Y6-2g3"/>
+                            <constraint firstItem="jqe-ri-Imk" firstAttribute="centerY" secondItem="mvZ-p3-h0M" secondAttribute="centerY" id="zqL-Zn-0ZY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pA8-EX-sfC"/>
+                                <exclude reference="Mjz-PT-Pk2"/>
+                                <exclude reference="fqC-Rv-cXa"/>
+                                <exclude reference="k1P-Nf-3Jt"/>
+                                <exclude reference="NIw-br-9CQ"/>
+                                <exclude reference="AGj-QZ-hfC"/>
+                                <exclude reference="ZUo-Q8-eFx"/>
+                                <exclude reference="Oak-QK-lxS"/>
+                                <exclude reference="1Jc-iR-FcN"/>
+                                <exclude reference="zqL-Zn-0ZY"/>
+                                <exclude reference="7CK-ed-GEP"/>
+                                <exclude reference="SqD-BK-ffa"/>
+                                <exclude reference="QJd-yY-AmX"/>
+                                <exclude reference="8Rp-yP-G3V"/>
+                                <exclude reference="GcN-lp-e90"/>
+                                <exclude reference="oDg-mS-6wc"/>
+                                <exclude reference="s74-Y6-2g3"/>
+                                <exclude reference="4yh-b3-COM"/>
+                                <exclude reference="CEV-0M-dfp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="partnerCard" destination="jqe-ri-Imk" id="78K-Kn-71Z"/>
+                        <outlet property="partnerLabel" destination="gx0-Ti-b1D" id="4lc-Q8-gsx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6kG-AL-coz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="1159"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bg-partner" width="320" height="568"/>
         <image name="bg-start" width="320" height="568"/>
         <image name="bg-vrienden" width="320" height="568"/>
         <image name="card" width="270" height="390"/>
         <image name="close" width="24" height="24"/>
         <image name="upload" width="28" height="28"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6cc-AF-gcQ"/>
+    </inferredMetricsTieBreakers>
 </document>
