@@ -15,6 +15,10 @@
 		442F453E1B529311004E8FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F453C1B529311004E8FEF /* LaunchScreen.storyboard */; };
 		442F45491B529311004E8FEF /* VrankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45481B529311004E8FEF /* VrankTests.swift */; };
 		442F45541B529311004E8FEF /* VrankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442F45531B529311004E8FEF /* VrankUITests.swift */; };
+		447EAC111B596BAF0090301B /* CardsThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAC101B596BAF0090301B /* CardsThreeViewController.swift */; };
+		447EAC131B596BED0090301B /* DateBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAC121B596BED0090301B /* DateBook.swift */; };
+		447EAC171B597F930090301B /* ColleagueBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAC161B597F930090301B /* ColleagueBook.swift */; };
+		447EAC191B597FEF0090301B /* CardsFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EAC181B597FEF0090301B /* CardsFourViewController.swift */; };
 		448CDAFD1B582E4700A94770 /* CardsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CDAFC1B582E4700A94770 /* CardsTwoViewController.swift */; };
 		448CDAFF1B582E6C00A94770 /* PartnerBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CDAFE1B582E6C00A94770 /* PartnerBook.swift */; };
 		44A4FCB11B5528BD000994C8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4FCB01B5528BD000994C8 /* CardsViewController.swift */; };
@@ -53,6 +57,10 @@
 		442F454F1B529311004E8FEF /* VrankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VrankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		442F45531B529311004E8FEF /* VrankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VrankUITests.swift; sourceTree = "<group>"; };
 		442F45551B529311004E8FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447EAC101B596BAF0090301B /* CardsThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsThreeViewController.swift; sourceTree = "<group>"; };
+		447EAC121B596BED0090301B /* DateBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateBook.swift; sourceTree = "<group>"; };
+		447EAC161B597F930090301B /* ColleagueBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColleagueBook.swift; sourceTree = "<group>"; };
+		447EAC181B597FEF0090301B /* CardsFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsFourViewController.swift; sourceTree = "<group>"; };
 		448CDAFC1B582E4700A94770 /* CardsTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsTwoViewController.swift; sourceTree = "<group>"; };
 		448CDAFE1B582E6C00A94770 /* PartnerBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerBook.swift; sourceTree = "<group>"; };
 		44A4FCB01B5528BD000994C8 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -120,8 +128,12 @@
 				442F45351B529310004E8FEF /* ViewController.swift */,
 				44A4FCB01B5528BD000994C8 /* CardsViewController.swift */,
 				448CDAFC1B582E4700A94770 /* CardsTwoViewController.swift */,
+				447EAC101B596BAF0090301B /* CardsThreeViewController.swift */,
+				447EAC181B597FEF0090301B /* CardsFourViewController.swift */,
 				44A571701B5512A90023E2DA /* FriendsBook.swift */,
 				448CDAFE1B582E6C00A94770 /* PartnerBook.swift */,
+				447EAC121B596BED0090301B /* DateBook.swift */,
+				447EAC161B597F930090301B /* ColleagueBook.swift */,
 				442F45371B529311004E8FEF /* Main.storyboard */,
 				442F453A1B529311004E8FEF /* Assets.xcassets */,
 				442F453C1B529311004E8FEF /* LaunchScreen.storyboard */,
@@ -282,10 +294,14 @@
 			files = (
 				448CDAFD1B582E4700A94770 /* CardsTwoViewController.swift in Sources */,
 				44A4FCB11B5528BD000994C8 /* CardsViewController.swift in Sources */,
+				447EAC191B597FEF0090301B /* CardsFourViewController.swift in Sources */,
+				447EAC131B596BED0090301B /* DateBook.swift in Sources */,
 				442F45361B529311004E8FEF /* ViewController.swift in Sources */,
+				447EAC171B597F930090301B /* ColleagueBook.swift in Sources */,
 				448CDAFF1B582E6C00A94770 /* PartnerBook.swift in Sources */,
 				44A571711B5512A90023E2DA /* FriendsBook.swift in Sources */,
 				442F45341B529310004E8FEF /* AppDelegate.swift in Sources */,
+				447EAC111B596BAF0090301B /* CardsThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
